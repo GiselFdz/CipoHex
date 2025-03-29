@@ -1,0 +1,342 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+
+/* Estilo para el ícono flotante de WhatsApp */
+.whatsapp-icon {
+  position: fixed;
+  bottom: 20px; /* Ajusta la distancia desde el fondo */
+  right: 20px;  /* Ajusta la distancia desde la derecha */
+  background-color: #25D366; /* Color verde característico de WhatsApp */
+  color: white;
+  border-radius: 50%;
+  padding: 15px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  font-size: 10px;
+  z-index: 1000; /* Asegura que el ícono esté por encima de otros elementos */
+  transition: all 0.3s ease-in-out;
+}
+
+/* Cambiar tamaño al pasar el ratón sobre el ícono */
+.whatsapp-icon:hover {
+  background-color: #128C7E; /* Color más oscuro de WhatsApp al pasar el ratón */
+  transform: scale(1.1); /* Aumenta el tamaño */
+}
+
+/* Estilo para el ícono */
+.whatsapp-icon i {
+  margin: 0;
+  font-size: 30px;
+}
+
+
+
+
+
+/*estilos navbar*/
+
+.navbar {
+  background-color: #1e3a8a; /* Azul oscuro */
+}
+.navbar a {
+  color: #ffffff; /* Blanco */
+  margin-right: 20px; /* Espacio entre enlaces */
+}
+
+.navbar a:hover {
+  color: #ff6600; /* Cambia el color al pasar el ratón */
+  transition: color 0.3s ease;
+}
+
+.navbar a {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.text-logo {
+  color: #ff6600;
+  font-size: 22px;
+}
+
+.navbar-toggler {
+  background-color: #ff5733; /* Cambia el color de fondo aquí */
+  border: none; /* Opcional: Si no deseas un borde */
+}
+
+.navbar-toggler-icon {
+  background-color: #ffffffd2; /* Cambia el color del icono dentro del botón */
+}
+
+/*estilos carrusel*/
+.carousel-item {
+  min-height: 400px;
+}
+
+.carousel-caption {
+  /*background-color: rgba(0, 0, 0, 0.116);  Fondo oscuro semitransparente */
+  padding: 20px;
+  bottom: 220px;
+  z-index: 2;
+}
+
+.carousel-caption h5 {
+  font-size: 60px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-top: 25px;
+}
+
+.carousel-caption p {
+  width: 60%;
+  margin: 10px auto;
+  font-size: 20px;
+  color: #dbd8d8; /* Texto secundario en gris claro */
+}
+
+.carousel-inner::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(15, 15, 15, 0.616);
+  z-index: 1;
+}
+
+.carousel-inner .carousel-item img {
+  object-fit: cover; /* Ajusta las imágenes al contenedor sin deformarlas */
+  height: 700px; /* Puedes ajustar esta altura según lo que necesites */
+}
+
+/*Servicios ofrecidos*/
+
+.services {
+  padding: 80px 0;
+}
+
+.bg-card1 {
+  background-image: linear-gradient(rgba(117, 70, 52, 0.6), rgba(0, 0, 0, 0.5)),
+    url(./Images/figura3.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px; /* Define una altura fija */
+}
+
+.bg-card2 {
+  background-image: linear-gradient(rgba(117, 70, 52, 0.6), rgba(0, 0, 0, 0.5)),
+    url(./Images/mate-emoji.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px; /* Define una altura fija */
+}
+
+.bg-card3 {
+  background-image: linear-gradient(rgba(117, 70, 52, 0.6), rgba(0, 0, 0, 0.5)),
+    url(./Images/vaso-river-plate.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px; /* Define una altura fija */
+}
+
+/* Para los títulos dentro de las tarjetas (card-title) */
+.bg-car1 .card-title,
+.bg-car2 .card-title,
+.bg-car3 .card-title {
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Sombra del texto */
+  padding-top: 20px;
+}
+
+/* Para el texto de cada tarjeta */
+.text-p {
+  padding-top: 10px; /* Ajusta el valor para mover el texto más abajo */
+  word-spacing: 5px; /* Ajusta el valor para agregar espaciado entre las palabras */
+  letter-spacing: 1px;
+}
+
+.box-icons i {
+  font-size: 40px;
+}
+
+.box-icons h3 {
+  font-size: 20px;
+  font-weight: 800;
+}
+
+/*estilos productos*/
+
+.product {
+  padding: 80px 0;
+}
+
+.card {
+  border-radius: 10px; /* Bordes redondeados */
+  overflow: hidden; /* Asegura que las imágenes no sobresalgan de los bordes redondeados */
+  display: flex;
+  flex-direction: column; /* Asegura que el contenido dentro de la tarjeta esté en columna */
+  height: 100%; /* Asegura que la tarjeta ocupe toda la altura disponible */
+}
+
+.card img {
+  width: 100%; /* Hace que la imagen ocupe todo el ancho de la tarjeta */
+  height: 200px; /* Fija una altura consistente para todas las imágenes */
+  object-fit: contain; /* Asegura que la imagen cubra el área sin distorsionarse */
+  object-position: center; /* Centra la imagen */
+  border-radius: 8px; /* Bordes redondeados en la imagen */
+  transition: transform 0.3s ease-in-out; /* Efecto de transición suave */
+}
+
+.card:hover img {
+  transform: scale(1.05); /* Efecto de zoom al pasar el mouse */
+}
+
+.card-body {
+  padding: 15px;
+  display: flex; /* Activa flexbox */
+  flex-direction: column; /* Alinea los elementos en columna */
+  justify-content: center; /* Centra el contenido verticalmente */
+  align-items: center; /* Centra el contenido horizontalmente */
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 1rem;
+}
+
+.btn-primary {
+  background-color: #1e3a8a;
+  text-align: center;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+/*Estilos ultimas fotos*/
+
+.banner {
+  padding: 50px 0;
+  margin-bottom: 80px;
+  background-color: #eae5df;
+}
+
+.banner h2 {
+  font-size: 40px;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+.imagenes {
+  display: flex;
+
+  justify-content: center; /* Centra las imágenes */
+  gap: 25px; /* Espacio entre las imágenes */
+  flex-wrap: wrap; /* Asegura que las imágenes se acomoden bien en pantallas pequeñas */
+  margin-top: 20px; /* Añade un pequeño margen superior */
+}
+
+.imagen-item {
+  width: 150px; /* Ajusta el tamaño de cada imagen */
+  height: 150px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.imagen-item img {
+  width: 100%; /* Hace que la imagen ocupe todo el espacio disponible del contenedor */
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px; /* Opcional: da bordes redondeados a las imágenes */
+}
+
+footer {
+  background-color: #1e3a8a; /* Fondo oscuro */
+  color: #fff; /* Texto blanco */
+  padding: 20px 0; /* Espaciado */
+}
+
+footer .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer .social-icons {
+  margin-top: 10px;
+}
+
+footer .social-icon {
+  margin: 0 10px;
+  color: #fff;
+  font-size: 24px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+footer .social-icon:hover {
+  color: #1da1f2; /* Color de hover (puedes cambiarlo según tu preferencia) */
+}
+
+/*estilos responsive*/
+
+@media (max-width: 767px) {
+  .carousel-item {
+    min-height: 500px;
+  }
+
+  .carousel-item img {
+    height: 500px;
+  }
+  .carousel-caption {
+    bottom: 30px;
+  }
+  .carousel-caption h5 {
+    font-size: 50px;
+    margin-top: 0;
+  }
+  .carousel-caption p {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .services {
+    padding: 30px 0;
+  }
+  .product {
+    padding: 30px 0 0 0;
+  }
+
+  .card img {
+    height: 150px; /* Reduce la altura en pantallas más pequeñas */
+  }
+
+  .card-body {
+    padding: 10px;
+  }
+
+  .banner {
+    margin-bottom: 30px;
+  }
+}
+
+
+.bg-footer {
+  background-color: #1e3a8a;
+}
+
